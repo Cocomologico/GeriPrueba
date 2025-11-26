@@ -1,0 +1,409 @@
+:root {
+    --dark-brown: #836D5F;
+    --light-beige: #E4CAB9;
+    --greenish-gray: #96A48D;
+    --gold: #D1B878;
+    --text-light: #f4f4f4;
+    --text-dark: #333;
+}
+
+/* Estilos Generales */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+}
+
+.fullscreen-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+}
+
+#portada {
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.content {
+    max-width: 960px;
+    padding: 20px;
+    z-index: 2;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--dark-brown);
+}
+
+/* Barra de Navegación */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-brown);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px; /* Reduced vertical padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center the links */
+    flex-grow: 1; /* Allow the ul to grow and fill the space */
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px; /* Reduced vertical padding */
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 16px; /* Explicitly set font size */
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--gold);
+    color: var(--dark-brown);
+}
+
+
+/* Sección 1: Portada */
+#portada {
+    color: white;
+}
+
+#video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.bg-video.active {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.scroll-down-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 2px solid var(--light-beige);
+    color: var(--light-beige);
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.scroll-down-btn:hover {
+    background-color: var(--light-beige);
+    color: var(--dark-brown);
+}
+
+/* Sección 2: Descripción */
+#descripcion {
+    background-color: var(--light-beige);
+}
+
+#descripcion p {
+    color: var(--dark-brown);
+    font-size: 1.2rem;
+}
+
+/* Sección 3: Servicios */
+#servicios {
+    background-color: #ffffff;
+}
+
+.dos-columnas {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+}
+
+.columna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.columna li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: var(--dark-brown);
+}
+
+.columna .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--greenish-gray);
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.columna h3 {
+    color: var(--gold);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.columna li {
+    align-items: flex-start; /* Align icon to the top */
+    line-height: 1.6;
+}
+
+.columna li strong {
+    color: var(--dark-brown);
+    margin-right: 5px; /* Space between title and description */
+}
+
+/* Sección 4: Actividades */
+#actividades {
+    background-color: var(--light-beige);
+}
+
+.grid-actividades {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.card:hover .card-hover {
+    opacity: 1;
+}
+
+.card-hover h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.card-hover p {
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word; /* For older browsers */
+    hyphens: auto; /* Optional: for better word breaking */
+}
+
+/* Sección 5: Contacto */
+#contacto {
+    padding: 0;
+    background-color: var(--dark-brown);
+}
+
+.dos-columnas-contacto {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.columna-mapa {
+    flex: 1;
+}
+
+.columna-info {
+    flex: 1;
+    background-color: var(--dark-brown);
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    text-align: left;
+}
+
+.columna-info h2 {
+    color: var(--light-beige);
+}
+
+.whatsapp-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #25D366; /* WhatsApp Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E; /* Darker WhatsApp Green */
+}
+
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Gradient Dividers */
+.gradient-divider {
+    height: 150px;
+    width: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 960px) {
+    .grid-actividades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fullscreen-section {
+        padding-top: 100px; /* Adjust for taller nav on mobile */
+        padding-bottom: 100px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .dos-columnas, .dos-columnas-contacto {
+        flex-direction: column;
+    }
+
+    .grid-actividades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #contacto {
+        height: auto;
+    }
+
+    .columna-mapa {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-actividades {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residencia Geriátrica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="#portada" class="nav-logo"><img src="media/logo_header.png" alt="Mini Logo"></a>
+        <ul>
+            <li><a href="#portada">Inicio</a></li>
+            <li><a href="#descripcion">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="portada" class="fullscreen-section">
+        <div id="video-container">
+            <video class="bg-video active" autoplay muted>
+                <source src="media/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video class="bg-video" muted>
+                <source src="media/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video class="bg-video" muted>
+                <source src="media/video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <img src="media/logo_optimized.png" alt="Logo" class="logo">
+            <h1>Cuidando a los que más importan</h1>
+            <a href="#descripcion" class="scroll-down-btn">Descubre más</a>
+        </div>
+    </section>
+
+    <section id="descripcion" class="fullscreen-section">
+        <div class="content">
+            <h2>Nuestra Misión</h2>
+            <p>Ofrecemos un entorno seguro, confortable y estimulante para nuestros residentes, con un enfoque en el cuidado personalizado y el bienestar integral. Nuestra misión es ser una extensión de su hogar, donde la dignidad y la alegría de vivir son nuestra prioridad.</p>
+        </div>
+    </section>
+
+    <div class="gradient-divider" style="background: linear-gradient(to bottom, var(--light-beige), #ffffff);"></div>
+
+    <section id="servicios" class="fullscreen-section">
+        <div class="content">
+            <h2>Servicios y Prestaciones</h2>
+            <div class="dos-columnas">
+                <div class="columna">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><i class="icon"></i> <strong>Estetica:</strong> Servicio de peluqueria y podologia propios.</li>
+                        <li><i class="icon"></i> <strong>Gastronomia:</strong> Servicio propio con dietas evaluadas y supervisadas por nuestra nutricionista.</li>
+                        <li><i class="icon"></i> <strong>Limpieza y Lavadero:</strong> Servicio propio</li>
+                        <li><i class="icon"></i> <strong>Seguridad:</strong> red de camaras</li>
+                        <li><i class="icon"></i> <strong>Visitas:</strong> Sin horarios establecidos.</li>
+                        <li><i class="icon"></i> <strong>Wifi y cable</strong></li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <h3>Prestaciones en Salud</h3>
+                    <ul>
+                        <li><i class="icon"></i> <strong>Asistencia medicia:</strong> 24HS, cuidados especiales.</li>
+                        <li><i class="icon"></i> <strong>Asistencia Psicologica:</strong> de acuerdo a lo que se necesite</li>
+                        <li><i class="icon"></i> <strong>Atencion medica:</strong> especializado en gerontologia</li>
+                        <li><i class="icon"></i> <strong>Emergencia medica:</strong> servicio las 24hs.</li>
+                        <li><i class="icon"></i> <strong>Nutricionista:</strong> semanal</li>
+                        <li><i class="icon"></i> <strong>Musicoterapeuta</strong></li>
+                        <li><i class="icon"></i> <strong>Terapeuta ocupacional</strong></li>
+                        <li><i class="icon"></i> <strong>Profesor de Yoga</strong></li>
+                        <li><i class="icon"></i> <strong>Taller de plastica</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gradient-divider" style="background: linear-gradient(to bottom, #ffffff, var(--light-beige));"></div>
+
+    <section id="actividades" class="fullscreen-section">
+        <div class="content">
+            <h2>Actividades</h2>
+            <div class="grid-actividades">
+                <div class="card">
+                    <img src="media/salidaterapeutica.jpg" alt="Salidas Terapeuticas">
+                    <div class="card-hover">
+                        <h3>Salidas Terapeuticas</h3>
+                        <p>Excursiones, picnics y visitas guiadas.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/organizaciondefestejos.jpg" alt="Organizacion de festejos">
+                    <div class="card-hover">
+                        <h3>Organizacion de festejos</h3>
+                        <p>Cumpleaños y otras fechas significativas.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/TerapiaOcupacional.jpg" alt="Terapia Ocupacional">
+                    <div class="card-hover">
+                        <h3>Terapia Ocupacional</h3>
+                        <p>Estimulacion de las capacidades motoras, cognitivas y sociales.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/yoga.jpg" alt="Yoga">
+                    <div class="card-hover">
+                        <h3>Yoga</h3>
+                        <p>Trabajo fisico, mental y espiritual para mejorar la calidad de vida.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/artesplasticas.jpg" alt="Artes plasticas">
+                    <div class="card-hover">
+                        <h3>Artes plasticas</h3>
+                        <p>Taller donde se estimulan las capacidades creativas del residente.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/tallercognitivo.jpg" alt="Taller cognitivo">
+                    <div class="card-hover">
+                        <h3>Taller cognitivo</h3>
+                        <p>Estimulacion de las capacidades cognitivas del residente.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/Musicoterapia.jpg" alt="Musicoterapia">
+                    <div class="card-hover">
+                        <h3>Musicoterapia</h3>
+                        <p>Trabajo terapeutico a traves de la musica.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/tallerpsicocultural.jpg" alt="Taller psicocultural">
+                    <div class="card-hover">
+                        <h3>Taller psicocultural</h3>
+                        <p>Estimulacion psicosocial y cognitiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gradient-divider" style="background: linear-gradient(to bottom, var(--light-beige), var(--dark-brown));"></div>
+
+    <section id="contacto" class="fullscreen-section">
+        <div class="dos-columnas-contacto">
+            <div class="columna-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d434.7354375409333!2d-58.485058407739274!3d-34.63740803811017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9981c65a22b%3A0xf75fb84c6d2df5a8!2sLa%20Canela!5e0!3m2!1sen!2sar!4v1764163443455!5m2!1sen!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="columna-info">
+                <h2>Contacto</h2>
+                <p><strong>Dirección:</strong> Av. Lacarra 206, Ciudad Autonoma de Buenos Aires.</p>
+                <p><strong>Código Postal:</strong> 1407</p>
+                <p><strong>Email:</strong> contacto@residenciageriatrica.com</p>
+                <p><strong>Teléfono:</strong> +123 456 7890</p>
+                <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">
+                    <img src="media/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon"> Escribir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
