@@ -373,10 +373,44 @@ nav ul li a:hover {
     color: var(--text-dark); /* Change text color to be visible on the light background */
 }
 
-/* Sección 5: Contacto */
+/* Seccion 5: Galeria */
+#galeria {
+    background-color: #ffffff;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.galeria-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.galeria-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Sección 6: Contacto */
 #contacto {
     padding: 0;
-    background-color: var(--dark-brown);
+    background-color: var(--light-beige);
 }
 
 .dos-columnas-contacto {
