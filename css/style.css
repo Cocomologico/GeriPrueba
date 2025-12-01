@@ -473,6 +473,9 @@ nav ul li a:hover {
     .grid-actividades {
         grid-template-columns: repeat(2, 1fr);
     }
+    .grid-galeria {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -513,6 +516,9 @@ nav ul li a:hover {
 
 @media (max-width: 480px) {
     .grid-actividades {
+        grid-template-columns: 1fr;
+    }
+    .grid-galeria {
         grid-template-columns: 1fr;
     }
 }
