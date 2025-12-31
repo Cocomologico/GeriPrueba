@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.residencialacanela.com.ar/sitemap.xml
